@@ -11,11 +11,11 @@
 	<header id="header1">Header</header>
 	<nav id="nav1">
 		<ul style="list-style-type: none;">
-			<li><a href="#">Home</a></li>
-			<li><a href="trains/trainSearch.jsp">Trains</a></li>
-			<li><a href="register/register.jsp">Register</a></li>
-			<li><a href="login/login.jsp">Login</a></li>
-			<li><a href="contact.jsp">Contact</a></li>
+			<li><div><a href="home.jsp">Home</a></div></li>
+			<li><div><a href="trains/trainSearch.jsp">Trains</a></div></li>
+			<li><div><a href="register/register.jsp">Register</a></div></li>
+			<li><div><a href="login/login.jsp">Login</a></div></li>
+			<li><div><a href="contact.jsp">Contact</a></div></li>
 		</ul>
 	</nav>
 	<main id="main1"></main>

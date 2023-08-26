@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/spring-web-4.3.11.RELEASE.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/tomcat-jasper-11.0.0-M7.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Mahesh/Downloads/servlet-api-3.0-alpha-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahesh/Downloads/mysql-connector-j-8.1.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
