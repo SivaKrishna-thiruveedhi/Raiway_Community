@@ -10,11 +10,13 @@
 <body>
 	<header id="header1">Header</header>
 	<nav id="nav1">
-		<a>Home</a>
-		<a>Trains</a>
-		<a>Register</a>
-		<a>Login</a>
-		<a>Contact</a>
+		<ul style="list-style-type: none;">
+			<li><a href="#">Home</a></li>
+			<li><a href="trains/trainSearch.jsp">Trains</a></li>
+			<li><a href="register/register.jsp">Register</a></li>
+			<li><a href="login/login.jsp">Login</a></li>
+			<li><a href="contact.jsp">Contact</a></li>
+		</ul>
 	</nav>
 	<main id="main1"></main>
 	<footer id="footer1"></footer>

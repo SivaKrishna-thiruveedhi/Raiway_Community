@@ -16,6 +16,10 @@ body{
 	height: 90vh;
 	background-color: #92fb04;
 }
+#nav1 ul li{
+	padding-top: 30px;
+	font-size: 25px;
+} 
 #footer1{
 	float:right;
 	width: 100%;
