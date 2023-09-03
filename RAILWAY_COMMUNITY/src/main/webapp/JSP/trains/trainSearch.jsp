@@ -27,15 +27,15 @@
 			<div>Search Your train by Starting Station</div>
 			<div id="search">
 				<div style="position: relative; left: 170px; top:50px; width: 250px">
-					<form action="../../TrainSearch">
-						<select style="font-size: 20px;">
+					<form action="../../TrainSearch" method="get">
+						<select style="font-size: 20px;" name="trainName">
 							<option value="">------------Select------------</option>
 						<%
 							String sql = "select station_name from train_region";
 							String train = "";
+							Connection con= DaoConnection.getConnection();
+							PreparedStatement ps = null;
 							try{
-								Connection con= DaoConnection.getConnection();
-								PreparedStatement ps = null;
 								if(con != null){
 									ps = con.prepareStatement(sql);
 									ResultSet rs = ps.executeQuery();
@@ -48,11 +48,18 @@
 							}
 							catch(Exception e){
 								e.printStackTrace();
+							} finally {
+								try {
+									con.close();
+									ps.close();
+								} catch (Exception e) {
+									e.printStackTrace();
+								}
 							}
 						%>
 							
-						</select>
-						<input type="submit" style="margin-left: 100px; font-size: 20px; border-radius: 10px;" id="btn" id="searchbtn">
+						</select><br><br><br><br>
+						<input type="submit" style="margin-left: 80px; font-size: 20px; border-radius: 10px;" id="btn" id="searchbtn">
 					</form>
 				</div>
 			</div>
